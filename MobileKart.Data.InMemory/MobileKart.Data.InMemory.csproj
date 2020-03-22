@@ -50,10 +50,6 @@
       <Project>{0beb4319-ab76-4cc7-8806-127b99163539}</Project>
       <Name>MobileKart.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MobileKart.Service\MobileKart.Service.csproj">
-      <Project>{E3686D57-4BF5-4D57-940A-2A88C7651881}</Project>
-      <Name>MobileKart.Service</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

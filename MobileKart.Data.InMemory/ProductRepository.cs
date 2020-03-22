@@ -1,4 +1,4 @@
-﻿using MobileKart.Service;
+﻿using MobileKart.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -54,9 +54,9 @@ namespace MobileKart.Data.InMemory
                 throw new Exception("Product Not Found");
             }
         }
-        public IEnumerable<Product> Collection()
+        public IQueryable<Product> Collection()
         {
-            return products.AsEnumerable();
+            return products.AsQueryable();
         }
         public void Delete(string Id)
         {

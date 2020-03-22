@@ -23,7 +23,7 @@ namespace MobileKart
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+                      "~/Content/bootstrap-min-space.css",
                       "~/Content/site.css"));
         }
     }

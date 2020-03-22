@@ -121,12 +121,14 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductManagerController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-min-space.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -162,10 +164,15 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\ProductManager\Index.cshtml" />
+    <Content Include="Views\ProductManager\Create.cshtml" />
+    <Content Include="Views\ProductManager\Edit.cshtml" />
+    <Content Include="Views\ProductManager\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Product\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -179,6 +186,24 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MobileKart.Core\MobileKart.Core.csproj">
+      <Project>{0beb4319-ab76-4cc7-8806-127b99163539}</Project>
+      <Name>MobileKart.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobileKart.Data.InMemory\MobileKart.Data.InMemory.csproj">
+      <Project>{11df065d-2602-4208-9407-11a18c13be89}</Project>
+      <Name>MobileKart.Data.InMemory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobileKart.Data.SQL\MobileKart.Data.SQL.csproj">
+      <Project>{5af482d8-0106-43ce-ae1e-db879f824da9}</Project>
+      <Name>MobileKart.Data.SQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobileKart.Service\MobileKart.Service.csproj">
+      <Project>{e3686d57-4bf5-4d57-940a-2a88c7651881}</Project>
+      <Name>MobileKart.Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
